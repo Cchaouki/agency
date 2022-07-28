@@ -15,6 +15,7 @@
   }
   body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0
 
   }
   a {
@@ -95,8 +96,10 @@
     
     /*media*/
     @media (max-width: 1000px) {header .container .fa-bars {display: block;} header .container > .new > ul {
-      display:none;background-color: white;position: absolute;top:80%;left: 73.5%;
-    box-shadow: 0 0 10px black;}
+      display:block;background-color: white;position: absolute;top:80%;left: 73.5%;
+    box-shadow: 0 0 10px black;
+     
+    }
     
      
     header .container > .new > ul > li > a {padding: 15px ;color:black;width:200px;margin-left:10px;}
@@ -104,11 +107,12 @@
     
 
     header .container > .new > ul >li:nth-last-child(n+1) {border-bottom: 1px solid #eaeaea;width:100%;}
+  
     
   }
   @media (max-width:1047px) {header .container .fa-bars {left:95%;}}
-  @media (max-width:991px){header .container > .new > ul {left:67%;}}
-  
+  @media (max-width:991px){header .container > .new > ul {left:-67%;}}
+ 
 
   /*end media*/
     
@@ -122,6 +126,17 @@
       header .container .logo .logobefore img {height:40px;} 
      header .container >.new .fa-bars {    left: 90%;}
      header .container >.new >ul {left:62%;}
+    }
+    @media (max-width:360px) {
+      header .container > .new>ul{
+        left: 35%;
+       
+      }.fa-bars{
+        display: block;
+        left: 50%
+        top:-4px;
+      }
+      
     }
     /*end header*/
     /*start landing*/
